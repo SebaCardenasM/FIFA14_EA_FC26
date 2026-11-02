@@ -1,0 +1,21 @@
+ {
+    "serverUrl":                 "http://127.0.0.1",
+
+    "comment":                   "UpdateCheckPeriod is in Days. -1 = unlimited, 0 = always suggest an update check.",
+    "updateCheckPeriodDays":     0,
+
+    "comment":                   "Optional. Default Value: true",
+    "failOnFirstError":          true,
+
+    "comment":                   "Relative to the AppData or Download folder. Dedicated to ContentManager.",
+    "workingDirectory":          "matchday",
+
+    "comment":                   "Optional. Default Value: false",
+    "checksumValidationEnabled": false,
+
+    "comment":                   "Optional. Default Value: false",
+    "eTagEnabled": 				 false,
+
+    "comment":                   "Optional. Default Value: true",
+    "failOnMissingMetadata":     false
+ }

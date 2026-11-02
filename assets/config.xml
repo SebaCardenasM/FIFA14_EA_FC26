@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:p="http://www.springframework.org/schema/p" 
+	xmlns:util="http://www.springframework.org/schema/util" 
+	xmlns:sec="http://www.springframework.org/schema/security" 
+	xmlns:burstly="http://www.burstly.com/scheme"
+	xsi:schemaLocation=" 
+		http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+		http://www.springframework.org/schema/util 
+		http://www.springframework.org/schema/util/spring-util.xsd">
+							<bean id="currency" name="CurrencyManager" class="com.burstly.lib.currency.CurrencyManager" burstly:validate="false"/>
+							<bean id="dtracker" name="DownloadTrackingManager" class="com.burstly.lib.downloadtracker.DownloadTrackingManager" burstly:validate="false"/>
+							<bean id="burstly" name="BurstlyAdaptorFactory" class="com.burstly.lib.component.networkcomponent.burstly.BurstlyAdaptorFactory" burstly:validate="true"/>
+							<bean id="apptracking" name="AppTrackingManager" class="com.burstly.lib.apptracking.AppTrackingManager" burstly:validate="false"/>
+							<bean id="admob" name="AdmobAdaptorFactory" class="com.burstly.lib.component.networkcomponent.admob.AdmobAdaptorFactory" burstly:validate="true"/>
+							<bean id="greystripe" name="GreystripeAdaptorFactory" class="com.burstly.lib.component.networkcomponent.greystripe.GreystripeAdaptorFactory" burstly:validate="true"/>
+							<bean id="inmobi" name="InmobiAdaptorFactory" class="com.burstly.lib.component.networkcomponent.inmobi.InmobiAdaptorFactory" burstly:validate="true"/>
+							<bean id="jumptap" name="JumptapAdaptorFactory" class="com.burstly.lib.component.networkcomponent.jumptap.JumptapAdaptorFactory" burstly:validate="true"/>
+							<bean id="millennial" name="MillennialAdaptorFactory" class="com.burstly.lib.component.networkcomponent.millennial.MillennialAdaptorFactory" burstly:validate="true"/>
+</beans>
